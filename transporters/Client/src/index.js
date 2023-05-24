@@ -1,0 +1,15 @@
+import React, { Suspense } from 'react';
+import { useEffect, useState } from "react";
+import ReactDOM from 'react-dom/client';
+import App from './App';
+import { BrowserRouter, useNavigate } from 'react-router-dom';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+
+root.render(
+  <Suspense>
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>
+  </Suspense>
+);
